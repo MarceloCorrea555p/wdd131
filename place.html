@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Marcelo Correa</title>
+    <meta name="description" content="W03 Assignment: Country Page: This page describes some important information about Argentina. The thermal sensation is calculated.">
+    <meta name="author" content="Marcelo Eduardo Correa">
+ 
+   
+   <link rel="stylesheet" href="styles/place.css"> 
+   <link rel="stylesheet" href="styles/place-large.css"> 
+   <script src="scripts/place.js" defer></script>
+        
+ </head>
+
+ <body>
+ <header class="flag-header">
+        <div class="stripe sky-blue"></div>
+        <div class="stripe white">
+            <h1>ARGENTINA</h1>
+        </div>
+        <div class="stripe sky-blue"></div>
+    </header>
+ <main>
+    <div class="hero-container">
+        
+        <!-- Element picture  -->
+        <picture class="hero-picture"> 
+            <source srcset="images/hero-large.webp" media="(min-width: 1000px)"> 
+            <img src="images/hero-small.webp" width="400" height="200" class="hero-img" alt="Panoramic view of Argentina landscape">
+             
+        </picture>
+
+        <div class="hero-overlay-cards">
+
+        
+        <div class="data-section">
+    <div class="data-card">
+        <h2>Data</h2>
+        <p><strong>Area:</strong> 3.761.274 km²</p>
+        <p><strong>Population:</strong> 46.000.000</p>
+        <p><strong>Language:</strong> Spanish</p>
+        <p><strong>Currency:</strong> Argentine Peso</p>
+        <p><strong>Time Zone:</strong> (GMT-3)</p>
+        <p><strong>Calling Code:</strong> +54</p>
+        <p><strong>Internet TLD:</strong> .ar</p>
+    </div>
+</div>
+
+<div class="weather-section">
+    <div class="weather-card">
+        <h2>Weather</h2>
+               
+<!-- External image logo.svg added here ----->
+      
+        <div class="weather-header-mobile">
+
+         <img src="images/logo.svg" alt="Sun icon for weather" class="weather-logo-img" width="50" height="50">
+     
+        </div>
+<!---------------------------------------------->
+
+
+        <p><strong>Temperature:</strong> 9C°</p>
+        <p><strong>Condition:</strong> Sunny</p>
+        <p><strong>Wind:</strong> 5 km/h</p>
+        <p><strong>Wind Chill:</strong> <span id="wind-chill"></span></p>
+        </div>
+    </div>
+
+</div>
+        </div>
+  
+   
+    </main>
+    <footer class="flag-footer">
+        <div class="stripe sky-blue"></div>
+        <div class="stripe white">
+            <p id="year"></p>
+            <p id="last-modified-date"></p>
+        </div>
+        <div class="stripe sky-blue"></div>
+    </footer>   
+ </body>
+</html>
